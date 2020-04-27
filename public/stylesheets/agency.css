@@ -176,7 +176,6 @@ header.masthead {
   background: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
   background-size: cover;
 }
 
