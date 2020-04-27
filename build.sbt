@@ -59,6 +59,7 @@ libraryDependencies ++= akkaLibs ++ akkaHttp ++ commonDependencies ++ dbLibs ++ 
   "net.ruippeixotog" %% "scala-scraper" % "2.1.0",
   "org.webjars" % "bootstrap" % "4.3.1",
   "org.webjars" % "momentjs" % "2.8.1",
+  "org.webjars.bower" % "popper.js" % "1.12.9",
   "org.apache.logging.log4j" % "log4j-api" % "2.12.1",
   "org.scalaj" % "scalaj-http_2.12" % "2.3.0"
 )
