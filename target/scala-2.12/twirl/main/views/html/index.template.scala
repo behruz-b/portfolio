@@ -1,16 +1,40 @@
-@this(webJarsUtil: org.webjars.play.WebJarsUtil)
-@()
-@import views.html.main
-@main("Scala Coders Team", webJarsUtil) {
 
-  <!-- Navigation -->
+package views.html
+
+import _root_.play.twirl.api.TwirlFeatureImports._
+import _root_.play.twirl.api.TwirlHelperImports._
+import _root_.play.twirl.api.Html
+import _root_.play.twirl.api.JavaScript
+import _root_.play.twirl.api.Txt
+import _root_.play.twirl.api.Xml
+import models._
+import controllers._
+import play.api.i18n._
+import views.html._
+import play.api.templates.PlayMagic._
+import play.api.mvc._
+import play.api.data._
+
+/**/
+class index @javax.inject.Inject() /*1.6*/(webJarsUtil: org.webjars.play.WebJarsUtil) extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+
+  /**/
+  def apply/*2.2*/():play.twirl.api.HtmlFormat.Appendable = {
+    _display_ {
+      {
+/*3.2*/import views.html.main
+
+
+Seq[Any](_display_(/*4.2*/main("Scala Coders Team", webJarsUtil)/*4.40*/ {_display_(Seq[Any](format.raw/*4.42*/("""
+
+  """),format.raw/*6.3*/("""<!-- Navigation -->
   <div class="wrap">
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-center">
           <p class="mb-0 mt-1 phone pl-md-2">
             <a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +998 99 4461230</a>
-            <a href="#"><span class="fa fa-paper-plane mr-1"></span> behruz.ravshonbekovich@@gmail.com</a>
+            <a href="#"><span class="fa fa-paper-plane mr-1"></span> behruz.ravshonbekovich@gmail.com</a>
           </p>
         </div>
         <div class="col-md-6 text-center">
@@ -79,7 +103,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="@routes.Assets.versioned("images/portfolio/timetable.jpg")"  alt="#">
+            <img class="img-fluid" src=""""),_display_(/*82.42*/routes/*82.48*/.Assets.versioned("images/portfolio/timetable.jpg")),format.raw/*82.99*/(""""  alt="#">
           </a>
           <div class="portfolio-caption">
             <h4><a href="#">TimeTable</a></h4>
@@ -93,7 +117,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="@routes.Assets.versioned("images/portfolio/01.jpg")" alt="">
+            <img class="img-fluid" src=""""),_display_(/*96.42*/routes/*96.48*/.Assets.versioned("images/portfolio/01.jpg")),format.raw/*96.92*/("""" alt="">
           </a>
           <div class="portfolio-caption">
             <h4>ProgrammersBoard</h4>
@@ -107,7 +131,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="@routes.Assets.versioned("images/portfolio/02.jpg")" alt="">
+            <img class="img-fluid" src=""""),_display_(/*110.42*/routes/*110.48*/.Assets.versioned("images/portfolio/02.jpg")),format.raw/*110.92*/("""" alt="">
           </a>
           <div class="portfolio-caption">
             <h4>ConguratulationBot</h4>
@@ -205,7 +229,7 @@
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="@routes.Assets.versioned("images/about/frontend.png")" alt="">
+                <img class="rounded-circle img-fluid" src=""""),_display_(/*208.61*/routes/*208.67*/.Assets.versioned("images/about/frontend.png")),format.raw/*208.113*/("""" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -218,7 +242,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="@routes.Assets.versioned("images/about/backend.png")" alt="">
+                <img class="rounded-circle img-fluid" src=""""),_display_(/*221.61*/routes/*221.67*/.Assets.versioned("images/about/backend.png")),format.raw/*221.112*/("""" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -231,7 +255,7 @@
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="@routes.Assets.versioned("images/about/others.png")" alt="">
+                <img class="rounded-circle img-fluid" src=""""),_display_(/*234.61*/routes/*234.67*/.Assets.versioned("images/about/others.png")),format.raw/*234.111*/("""" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -267,7 +291,7 @@
           <!-- Boltayev Behruzbek -->
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="@routes.Assets.versioned("images/team/behruzbek.jpg")" alt="#">
+            <img class="mx-auto rounded-circle" src=""""),_display_(/*270.55*/routes/*270.61*/.Assets.versioned("images/team/behruzbek.jpg")),format.raw/*270.107*/("""" alt="#">
             <h4>Boltayev Behruzbek</h4>
             <p class="text-muted">Middle Full-Stack Developer & DevOps Engineer</p>
             <ul class="list-inline social-buttons">
@@ -292,7 +316,7 @@
           <!-- Rahmatov Maftunbek -->
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="@routes.Assets.versioned("images/team/maftunbek.jpg")" alt="#">
+            <img class="mx-auto rounded-circle" src=""""),_display_(/*295.55*/routes/*295.61*/.Assets.versioned("images/team/maftunbek.jpg")),format.raw/*295.107*/("""" alt="#">
             <h4>Rahmatov Maftunbek</h4>
             <p class="text-muted">Full-Stack Master</p>
             <ul class="list-inline social-buttons">
@@ -317,7 +341,7 @@
           <!-- Jumaniyozov Surojiddin -->
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="@routes.Assets.versioned("images/team/surojiddin.jpg")" alt="">
+            <img class="mx-auto rounded-circle" src=""""),_display_(/*320.55*/routes/*320.61*/.Assets.versioned("images/team/surojiddin.jpg")),format.raw/*320.108*/("""" alt="">
             <h4>Jumaniyozov Surojiddin</h4>
             <p class="text-muted">Full-Stack Master</p>
             <ul class="list-inline social-buttons">
@@ -342,8 +366,8 @@
           <!-- Aminov Abduvali -->
               <!--<div class="col-sm-4">
           <div class="team-member">
-            @*<img class="mx-auto rounded-circle" src="@routes.Assets.versioned("images/team/2.jpg")" alt="#">*@
-            <h4>Aminov Abduvali</h4>
+            """),format.raw/*345.113*/("""
+            """),format.raw/*346.13*/("""<h4>Aminov Abduvali</h4>
             <p class="text-muted">Full-Stack Master</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
@@ -367,7 +391,7 @@
           <!-- Yo'ldashev Bekturdi -->
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="@routes.Assets.versioned("images/team/bekturdi.jpg")" alt="">
+            <img class="mx-auto rounded-circle" src=""""),_display_(/*370.55*/routes/*370.61*/.Assets.versioned("images/team/bekturdi.jpg")),format.raw/*370.106*/("""" alt="">
             <h4>Yo'ldashev Bekturdi</h4>
             <p class="text-muted">Full-Stack Master</p>
             <ul class="list-inline social-buttons">
@@ -392,7 +416,7 @@
           <!-- Jumanazarov Javlon -->
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="@routes.Assets.versioned("images/team/javlon.jpg")" alt="">
+            <img class="mx-auto rounded-circle" src=""""),_display_(/*395.55*/routes/*395.61*/.Assets.versioned("images/team/javlon.jpg")),format.raw/*395.104*/("""" alt="">
             <h4>Jumanazarov Javlon</h4>
             <p class="text-muted">Full-Stack Master</p>
             <ul class="list-inline social-buttons">
@@ -417,7 +441,7 @@
           <!-- Babayev Shohruxbek -->
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="@routes.Assets.versioned("images/team/Shohrux.jpg")" alt="#">
+            <img class="mx-auto rounded-circle" src=""""),_display_(/*420.55*/routes/*420.61*/.Assets.versioned("images/team/Shohrux.jpg")),format.raw/*420.105*/("""" alt="#">
             <h4>Babayev Shohruxbek</h4>
             <p class="text-muted">Full-Stack Master</p>
             <ul class="list-inline social-buttons">
@@ -442,7 +466,7 @@
           <!-- Yaqubov Yunusbek -->
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="@routes.Assets.versioned("images/team/Yunusbek.jpg")" alt="#">
+            <img class="mx-auto rounded-circle" src=""""),_display_(/*445.55*/routes/*445.61*/.Assets.versioned("images/team/Yunusbek.jpg")),format.raw/*445.106*/("""" alt="#">
             <h4>Yaqubov Yunusbek</h4>
             <p class="text-muted">Full-Stack Master</p>
             <ul class="list-inline social-buttons">
@@ -467,7 +491,7 @@
               <!-- Shomurotov Og`abek -->
           <div class="col-sm-4">
               <div class="team-member">
-                  <img class="mx-auto rounded-circle" src="@routes.Assets.versioned("images/team/og%60abek.jpg")" alt="#">
+                  <img class="mx-auto rounded-circle" src=""""),_display_(/*470.61*/routes/*470.67*/.Assets.versioned("images/team/og%60abek.jpg")),format.raw/*470.113*/("""" alt="#">
                   <h4>Shomurotov Og`abek</h4>
                   <p class="text-muted">Full-Stack Master</p>
                   <ul class="list-inline social-buttons">
@@ -539,13 +563,13 @@
       </div>
       <div class="row">
         <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          @*<i class="fas fa-phone fa-3x mb-3 text-white"></i>*@
-          <svg class="mb-3 text-white" width="50px" height="50px" style="fill: white" viewBox="-96 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m159.808594 456.066406c-8.164063 0-14.808594 6.644532-14.808594 14.808594s6.644531 14.804688 14.808594 14.804688c8.164062 0 14.804687-6.644532 14.804687-14.804688 0-8.164062-6.640625-14.808594-14.804687-14.808594zm0 15.683594c-.484375 0-.878906-.394531-.878906-.875 0-.484375.394531-.878906.878906-.878906.480468 0 .875.394531.875.878906 0 .480469-.394532.875-.875.875zm0 0"/><path d="m271.714844 0h-14.847656c-4.140626 0-7.5 3.359375-7.5 7.5s3.359374 7.5 7.5 7.5h14.847656c18.140625 0 32.898437 14.757812 32.898437 32.898438v16.230468h-289.613281v-16.230468c0-18.140626 14.757812-32.898438 32.898438-32.898438h179.207031c4.140625 0 7.5-3.359375 7.5-7.5s-3.359375-7.5-7.5-7.5h-179.207031c-26.410157 0-47.898438 21.488281-47.898438 47.898438v416.203124c0 26.414063 21.488281 47.898438 47.898438 47.898438h223.816406c26.410156 0 47.898437-21.484375 47.898437-47.898438v-416.203124c0-26.410157-21.484375-47.898438-47.898437-47.898438zm0 497h-223.816406c-18.140626 0-32.898438-14.757812-32.898438-32.898438v-384.972656h289.613281v351.070313h-266.972656c-4.144531 0-7.5 3.359375-7.5 7.5s3.355469 7.5 7.5 7.5h266.972656v18.902343c0 18.140626-14.757812 32.898438-32.898437 32.898438zm0 0"/><path d="m108.128906 289.898438c1.464844 1.464843 3.382813 2.195312 5.304688 2.195312 1.917968 0 3.835937-.730469 5.300781-2.195312 2.929687-2.929688 2.929687-7.679688 0-10.605469l-32.226563-32.230469 32.226563-32.226562c2.929687-2.929688 2.929687-7.679688 0-10.605469-2.925781-2.929688-7.675781-2.929688-10.605469 0l-37.53125 37.53125c-1.40625 1.402343-2.199218 3.3125-2.199218 5.300781s.792968 3.898438 2.199218 5.304688zm0 0"/><path d="m200.878906 289.898438c1.464844 1.464843 3.382813 2.195312 5.304688 2.195312 1.917968 0 3.835937-.730469 5.300781-2.195312l37.53125-37.53125c2.929687-2.929688 2.929687-7.679688 0-10.605469l-37.53125-37.53125c-2.929687-2.929688-7.675781-2.929688-10.605469 0-2.929687 2.925781-2.929687 7.675781 0 10.605469l32.230469 32.226562-32.230469 32.230469c-2.929687 2.925781-2.929687 7.675781 0 10.605469zm0 0"/><path d="m143.351562 321.976562c.488282.09375.972657.140626 1.453126.140626 3.511718 0 6.648437-2.476563 7.351562-6.054688l26.539062-135.109375c.796876-4.0625-1.851562-8.003906-5.914062-8.804687-4.066406-.792969-8.007812 1.851562-8.804688 5.914062l-26.539062 135.109375c-.800781 4.0625 1.847656 8.007813 5.914062 8.804687zm0 0"/></svg>
+          """),format.raw/*542.65*/("""
+          """),format.raw/*543.11*/("""<svg class="mb-3 text-white" width="50px" height="50px" style="fill: white" viewBox="-96 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m159.808594 456.066406c-8.164063 0-14.808594 6.644532-14.808594 14.808594s6.644531 14.804688 14.808594 14.804688c8.164062 0 14.804687-6.644532 14.804687-14.804688 0-8.164062-6.640625-14.808594-14.804687-14.808594zm0 15.683594c-.484375 0-.878906-.394531-.878906-.875 0-.484375.394531-.878906.878906-.878906.480468 0 .875.394531.875.878906 0 .480469-.394532.875-.875.875zm0 0"/><path d="m271.714844 0h-14.847656c-4.140626 0-7.5 3.359375-7.5 7.5s3.359374 7.5 7.5 7.5h14.847656c18.140625 0 32.898437 14.757812 32.898437 32.898438v16.230468h-289.613281v-16.230468c0-18.140626 14.757812-32.898438 32.898438-32.898438h179.207031c4.140625 0 7.5-3.359375 7.5-7.5s-3.359375-7.5-7.5-7.5h-179.207031c-26.410157 0-47.898438 21.488281-47.898438 47.898438v416.203124c0 26.414063 21.488281 47.898438 47.898438 47.898438h223.816406c26.410156 0 47.898437-21.484375 47.898437-47.898438v-416.203124c0-26.410157-21.484375-47.898438-47.898437-47.898438zm0 497h-223.816406c-18.140626 0-32.898438-14.757812-32.898438-32.898438v-384.972656h289.613281v351.070313h-266.972656c-4.144531 0-7.5 3.359375-7.5 7.5s3.355469 7.5 7.5 7.5h266.972656v18.902343c0 18.140626-14.757812 32.898438-32.898437 32.898438zm0 0"/><path d="m108.128906 289.898438c1.464844 1.464843 3.382813 2.195312 5.304688 2.195312 1.917968 0 3.835937-.730469 5.300781-2.195312 2.929687-2.929688 2.929687-7.679688 0-10.605469l-32.226563-32.230469 32.226563-32.226562c2.929687-2.929688 2.929687-7.679688 0-10.605469-2.925781-2.929688-7.675781-2.929688-10.605469 0l-37.53125 37.53125c-1.40625 1.402343-2.199218 3.3125-2.199218 5.300781s.792968 3.898438 2.199218 5.304688zm0 0"/><path d="m200.878906 289.898438c1.464844 1.464843 3.382813 2.195312 5.304688 2.195312 1.917968 0 3.835937-.730469 5.300781-2.195312l37.53125-37.53125c2.929687-2.929688 2.929687-7.679688 0-10.605469l-37.53125-37.53125c-2.929687-2.929688-7.675781-2.929688-10.605469 0-2.929687 2.925781-2.929687 7.675781 0 10.605469l32.230469 32.226562-32.230469 32.230469c-2.929687 2.925781-2.929687 7.675781 0 10.605469zm0 0"/><path d="m143.351562 321.976562c.488282.09375.972657.140626 1.453126.140626 3.511718 0 6.648437-2.476563 7.351562-6.054688l26.539062-135.109375c.796876-4.0625-1.851562-8.003906-5.914062-8.804687-4.066406-.792969-8.007812 1.851562-8.804688 5.914062l-26.539062 135.109375c-.800781 4.0625 1.847656 8.007813 5.914062 8.804687zm0 0"/></svg>
           <div class="text-white">+998 99 4461230</div>
         </div>
         <div class="col-lg-4 mr-auto text-center">
-          @*<i class="fas fa-envelope fa-3x mb-3 text-white"></i>*@
-          <svg version="1.1" id="Capa_1" class="mb-3 text-white" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          """),format.raw/*547.68*/("""
+          """),format.raw/*548.11*/("""<svg version="1.1" id="Capa_1" class="mb-3 text-white" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 511.974 511.974" style="enable-background:new 0 0 511.974 511.974; fill: white" xml:space="preserve">
             <g>
               <g>
@@ -609,7 +633,7 @@
             </g>
           </svg>
             <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block text-white" href="mailto:behruz.ravshonbekovich@@gmail.com">behruz.ravshonbekovich@@gmail.com</a>
+          <a class="d-block text-white" href="mailto:behruz.ravshonbekovich@gmail.com">behruz.ravshonbekovich@gmail.com</a>
         </div>
       </div>
     </div>
@@ -640,7 +664,7 @@
                   <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Time Table</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="@routes.Assets.versioned("images/portfolio/timetable.jpg")" alt="#">
+                <img class="img-fluid d-block mx-auto" src=""""),_display_(/*643.62*/routes/*643.68*/.Assets.versioned("images/portfolio/timetable.jpg")),format.raw/*643.119*/("""" alt="#">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: December 2019</li>
@@ -672,7 +696,7 @@
                   <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Programmers Board</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="@routes.Assets.versioned("images/portfolio/01.jpg")" alt="#">
+                <img class="img-fluid d-block mx-auto" src=""""),_display_(/*675.62*/routes/*675.68*/.Assets.versioned("images/portfolio/01.jpg")),format.raw/*675.112*/("""" alt="#">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2020</li>
@@ -706,7 +730,7 @@
                   <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Conguratulation Bot</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="@routes.Assets.versioned("images/portfolio/02.jpg")" alt="#">
+                <img class="img-fluid d-block mx-auto" src=""""),_display_(/*709.62*/routes/*709.68*/.Assets.versioned("images/portfolio/02.jpg")),format.raw/*709.112*/("""" alt="#">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
@@ -726,4 +750,28 @@
 
     <!-- Bootstrap core JavaScript -->
 
+""")))}),format.raw/*729.2*/("""
+"""))
+      }
+    }
+  }
+
+  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+
+  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+
+  def ref: this.type = this
+
 }
+
+
+              /*
+                  -- GENERATED --
+                  DATE: 2020-05-03T00:38:50.324142
+                  SOURCE: /home/yoshhacker/IdeaProjects/portfolio/app/views/index.scala.html
+                  HASH: 799494f12fce6b856d66ce0e9cb6cd801717879e
+                  MATRIX: 473->5|800->50|875->54|926->78|972->116|1011->118|1041->122|4847->3902|4862->3908|4934->3959|5553->4551|5568->4557|5633->4601|6242->5182|6258->5188|6324->5232|10997->9877|11013->9883|11082->9929|11821->10640|11837->10646|11905->10691|12617->11375|12633->11381|12700->11425|14118->12815|14134->12821|14203->12867|15224->13860|15240->13866|15309->13912|16286->14861|16302->14867|16372->14914|17311->15923|17353->15936|18275->16830|18291->16836|18359->16881|19338->17832|19354->17838|19420->17881|20398->18831|20414->18837|20481->18881|21480->19852|21496->19858|21564->19903|22522->20833|22538->20839|22607->20885|25676->23979|25716->23990|28380->26682|28420->26693|33259->31506|33275->31512|33349->31563|34900->33086|34916->33092|34983->33136|36572->34697|36588->34703|36655->34747|37517->35578
+                  LINES: 19->1|22->2|25->3|28->4|28->4|28->4|30->6|106->82|106->82|106->82|120->96|120->96|120->96|134->110|134->110|134->110|232->208|232->208|232->208|245->221|245->221|245->221|258->234|258->234|258->234|294->270|294->270|294->270|319->295|319->295|319->295|344->320|344->320|344->320|369->345|370->346|394->370|394->370|394->370|419->395|419->395|419->395|444->420|444->420|444->420|469->445|469->445|469->445|494->470|494->470|494->470|566->542|567->543|571->547|572->548|667->643|667->643|667->643|699->675|699->675|699->675|733->709|733->709|733->709|753->729
+                  -- GENERATED --
+              */
+          
