@@ -5,9 +5,10 @@
 
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
+# An example controller showing how to use dependency injection
 
-
-GET     /assets/*file        @controllers.Assets.versioned(path="/public", file)
-->      /webjars             webjars.Routes
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+->      /webjars                    webjars.Routes
 
       

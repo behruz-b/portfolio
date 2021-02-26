@@ -1,9 +1,4 @@
-@*
- * This template is called from the `index` template. This template
- * handles the rendering of the page header and body tags. It takes
- * two arguments, a `String` for the title of the page and an `Html`
- * object to insert into the body of the page.
- *@
+
 @(title: String, webJarsUtil: org.webjars.play.WebJarsUtil)(content: Html)
 
 <!DOCTYPE html>
@@ -16,7 +11,6 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @webJarsUtil.locate("css/bootstrap.min.css").css()
-    @webJarsUtil.locate("build/toastr.min.css").css()
 
     <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/agency.css")">
     <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/fontawesome-free/css/all.css")">
@@ -34,10 +28,9 @@
         @webJarsUtil.locate("jquery.js").script()
         @webJarsUtil.locate("popper.js/1.14.3/umd/popper.min.js").script()
         @webJarsUtil.locate("js/bootstrap.min.js").script()
-        @webJarsUtil.locate("knockout.js").script()
         <script src="@routes.Assets.versioned("lib/knockout.mapping-latest.js")" type="text/javascript"></script>
-        @webJarsUtil.locate("toastr.min.js").script()
         @webJarsUtil.locate("bootstrap.bundle.min.js").script()
+        @webJarsUtil.locate("knockout.js").script()
         <script src="@routes.Assets.versioned("javascripts/agency.js")" type="text/javascript"></script>
         <script src="@routes.Assets.versioned("javascripts/general.js")" type="text/javascript"></script>
     </head>

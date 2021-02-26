@@ -13,3 +13,7 @@ dist
 /.project
 /RUNNING_PID
 /.settings
+/project/.bloop
+/.metals
+/.vscode
+/.bsp

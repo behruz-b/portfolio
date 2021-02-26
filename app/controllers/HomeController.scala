@@ -1,16 +1,14 @@
 package controllers
 
-import com.typesafe.scalalogging.LazyLogging
 import javax.inject._
 import play.api.mvc._
-import views.html._
+import views.html.index
 /**
  * This controller creates an `Action` to handle HTTP requests to the
  * application's home page.
  */
 @Singleton
-class HomeController @Inject()(val controllerComponents: ControllerComponents,
-                              indexTemplate: index) extends BaseController with LazyLogging {
+class HomeController @Inject()(val controllerComponents: ControllerComponents,indexTemplate: index) extends BaseController {
 
   /**
    * Create an Action to render an HTML page with a welcome message.
